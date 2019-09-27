@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "pl-PL">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="./js/script.js"></script>
+		<title>Login</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css"/>
+	</head>
+
+	<body>
+		<form action = "2.html" method = "GET">	
+			<div class="container">
+				<h1>Register</h1>
+				<p>Please fill in this form to create an account.</p><hr>
+				<label for = "pImie"><b>Name</b></label>
+				<input id = "pImie" required placeholder="Enter Name" type = "text" name = "Name"/>
+				<label for = "pNazwisko"><b>Surname</b></label>
+				<input id = "pNazwisko" required placeholder="Enter Surname" type = "text" name = "Surname"/>
+				<label for = "pTekstowe"><b>Nickname</b></label>
+				<input id = "pTekstowe" required placeholder="Enter Nickname" type = "text" name = "Nickname"/>
+				<label for="age"><b>Birthday</b></label>
+				<input type="date" placeholder="Age" name="age" required>
+				<input type = "radio" id = "Male" name = "opcjaJ" checked/>
+				<label for = "Male"><b>Male</b></label>
+				<input type = "radio" id = "Female" name = "opcjaJ"/>
+				<label for = "Female"><b>Female</b></label><br><br>
+				<label for="email"><b>Email</b></label>
+				<input type="email" placeholder="Enter Email" name="email" required>
+				<label for="psw"><b>Password</b></label>
+				<input id = "psw" type="password" placeholder="Enter Password" name="psw" required>
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input id = "psw-repeat" type="password" placeholder="Repeat Password" name="psw-repeat" pattern = "(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+				<hr>
+				<input id = "submit" class="registerbtn" type = "submit" onclick="myFunction()" value = "Submit"/> 
+				<input id = "reset" type="reset" value="Clear"/>
+			</div>
+		</form>	
+	</body>
+</html>
